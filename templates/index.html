@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>Index Page</title>
+   </head>
+   <body>
+      <h3>Profiles</h3>
+      <a href="/register">Register</a>
+      <br>
+      <table>
+         <thead>
+            <th>Id</th>
+            <th>Prénom</th>
+            <th>Nom</th>
+            <th>Nombre de crédits</th>
+            <th>#</th>
+         </thead>
+         {% for data in joueurs %}
+         <tbody>
+            <td>{{data[0]}}</td>
+            <td>{{data[2]}}</td>
+            <td>{{data[1]}}</td>
+            <td>{{data[3]}}</td>
+            <td><a href="/delete/{{data.id}}" type="button">Delete</a></td>
+         </tbody>
+         {% endfor%}
+      </table>
+   </body>
+</html>

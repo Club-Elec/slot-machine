@@ -1,0 +1,85 @@
+/*background-image: linear-gradient(to right bottom, #ffbe98, #fcb798, #f8b099, #f3aa99, #eea49a, #e99b94, #e3938f, #de8a8a, #d87c7d, #d26f71, #cb6065, #c45259);*/
+
+/*Palette : FDFFE1 / FFBE98 DE8A8A / C45259 / 112A46*/
+
+/*Font : Abel*/
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Abel', sans-serif;
+    background-image: linear-gradient(to right bottom, #ffbe98, #fcb798, #f8b099, #f3aa99, #eea49a, #e99b94, #e3938f, #de8a8a, #d87c7d, #d26f71, #cb6065, #c45259);
+    color: #112A46;
+}
+
+form {
+    background-color: #FDFFE1;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(17, 42, 70, 0.2); /* Ombre portée */
+    border-radius: 10px; /* Arrondir les coins */
+    width: 400px;
+}
+
+.container {
+    width: 80%; /* Largeur du formulaire */
+    max-width: 400px;
+    margin: auto; /* Centrer horizontalement */
+    display: flex;
+    flex-direction: column; /* Pour empiler les éléments verticalement */
+    justify-content: center; /* Centrer horizontalement */
+    align-items: center; /* Centrer verticalement */
+    height: 100vh; /* Centrer verticalement */
+}
+
+.form-group {
+    margin-bottom: 20px;
+    text-align: left; /* Aligner le texte à gauche */
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: calc(100% - 22px); /* Largeur des champs de saisie */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    color: #112A46;
+}
+
+.warning {
+    color: red; /* Couleur du texte en rouge */
+    font-size: 12px; /* Taille de police */
+    margin-left: 10px; /* Marge à gauche pour l'avertissement */
+}
+
+.button-container {
+    text-align: center; /* Centrer le bouton horizontalement */
+}
+
+button {
+    background-color: #112A46;
+    color: #FFBE98;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s; /* Animation de transition pour le changement de couleur */
+}
+
+button:hover {
+    background-color: #FFBE98;
+    color: #112A46;
+}
+
+
+
