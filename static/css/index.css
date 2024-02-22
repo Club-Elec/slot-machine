@@ -1,0 +1,132 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Abel', sans-serif;
+    background-image: linear-gradient(to right bottom, #ffbe98, #fcb798, #f8b099, #f3aa99, #eea49a, #e99b94, #e3938f, #de8a8a, #d87c7d, #d26f71, #cb6065, #c45259);
+    color: #112A46;
+}
+
+.container {
+    width: 80%; /* Largeur du formulaire */
+    max-width: 1200px;
+    margin: auto; /* Centrer horizontalement */
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #FFBE98;
+}
+
+main {
+    padding-top: 80px; /* adjust according to header height */
+    padding-bottom: 80px; /* adjust according to footer height */
+}
+
+.logo-container {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.play-btn {
+    background-color: #112A46;
+    color: #FFBE98;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s; /* Animation de transition pour le changement de couleur */
+}
+
+.play-btn:hover {
+    background-color: #FFBE98;
+    color: #112A46;
+}
+
+.latest-winner-container {
+    margin-top: 100px; /* adjust according to content above */
+}
+
+.latest-winner {
+    background-color: #FDFFE1;
+    padding: 20px;
+    border-radius: 10px; /* Arrondir les coins */
+
+}
+
+/* Table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+/* Table Header */
+thead {
+    background-color: #112A46;
+    color: #FFBE98;
+}
+
+thead th {
+    padding: 10px;
+    text-align: left;
+}
+
+/* Table Body */
+tbody td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+/* Table Links */
+tbody td a {
+    color: #FFBE98;
+    text-decoration: none;
+}
+
+tbody td a:hover {
+    text-decoration: underline;
+}
+
+.header {
+    padding: 20px 0;
+    position: fixed;
+    width: 100%;
+    background-color: #112A46;
+    z-index: 1000; /* Ensure it's above other content */
+    top: 0;
+}
+
+.footer {
+    padding: 20px 0;
+    background-color: #112A46;
+
+    z-index: 1000; /* Ensure it's above other content */
+    bottom: 0;
+    width: 100%;
+}
+
+.content {
+    padding-top: 80px; /* adjust according to header height */
+    padding-bottom: 80px; /* adjust according to footer height */
+}
+
+p {
+    color: #FFBE98;
+}

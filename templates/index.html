@@ -1,29 +1,64 @@
 <!DOCTYPE html>
-<html>
-   <head>
-      <title>Index Page</title>
-   </head>
-   <body>
-      <h3>Profiles</h3>
-      <a href="/register">Register</a>
-      <br>
-      <table>
-         <thead>
-            <th>Id</th>
-            <th>Prénom</th>
-            <th>Nom</th>
-            <th>Nombre de crédits</th>
-            <th>#</th>
-         </thead>
-         {% for data in joueurs %}
-         <tbody>
-            <td>{{data[0]}}</td>
-            <td>{{data[2]}}</td>
-            <td>{{data[1]}}</td>
-            <td>{{data[3]}}</td>
-            <td><a href="/delete/{{data.id}}" type="button">Delete</a></td>
-         </tbody>
-         {% endfor%}
-      </table>
-   </body>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slot Machine Landing Page</title>
+    <link rel="stylesheet" href="../static/css/index.css">
+</head>
+<body>
+    <div class="header">
+        <div class="container">
+            <nav>
+                <ul>
+                    <li><a href="/login">Login</a></li>
+                    <li><a href="/register">Register</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <main>
+        <div class="logo-container">
+            <div class="container">
+                <div class="logo">
+                    <!-- Your logo image goes here -->
+                </div>
+                <button class="play-btn">Play Now</button>
+            </div>
+        </div>
+        <div class="latest-winner-container">
+            <div class="container">
+                <div class="latest-winner">
+                    <h2>Latest Winners (currently player) </h2>
+                    <table>
+                     <thead>
+                        <th>Id</th>
+                        <th>Prénom</th>
+                        <th>Nom</th>
+                        <th>Nombre de crédits</th>
+                        <th></th>
+                     </thead>
+                     {% for data in joueurs %}
+                     <tbody>
+                        <td>{{data[0]}}</td>
+                        <td>{{data[2]}}</td>
+                        <td>{{data[1]}}</td>
+                        <td>{{data[3]}}</td>
+                     </tbody>
+                     {% endfor%}
+                  </table>
+                </div>
+            </div>
+        </div>
+    </main>
+    <div class="footer">
+        <div class="container">
+            <nav>
+                <ul>
+                    <li> <p>Contributors: [List of contributors]</p></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</body>
 </html>
